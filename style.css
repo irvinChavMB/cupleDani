@@ -1,0 +1,110 @@
+body,
+html {
+  font-family: 'Press Start 2P', cursive;
+  background: #424242;
+  color: rgba(255, 255, 255, 0.8);;
+  font-size: 18px;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
+  position: absolute;
+}
+
+#name {
+  font-family: 'Press Start 2P', cursive;
+	font-size: 2em;
+	font-weight: 700;
+	line-height: 110px;
+  margin-left: -8px;
+  margin-top: -15px;
+}
+
+#detail {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 2em;
+  margin-right: 2em;
+	font-size: 21px;
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 22px;
+	margin-top: 25px;
+}
+
+#title,
+#messages,
+#log,
+#cards,
+#messageForm {
+  padding: 10px;
+  margin-right: 10px;
+  margin-right: 10px;
+}
+
+#top {
+  display: flex;
+  flex: 1;
+}
+
+#image {
+  height: auto;
+  width: 30vw;
+  margin-top: 10px;
+}
+
+#messages,
+#log {
+  text-align: center;
+  min-width: min-content;
+  flex: 1 1 auto;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#messageForm input {
+  margin: 0;
+  padding: 10px;
+  width: calc(100% - 26px);
+}
+
+#messageForm button {
+  display: none;
+}
+
+
+#cards {
+  background-color: #476089;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: -10px;
+  margin-top: -10px;
+  margin-right: -10px;
+}
+
+button {
+  font-family: 'Press Start 2P', cursive;
+  color: #fff;
+  padding-top: 70px;
+  font-size: 0.5em;
+  text-align: center;
+  position: relative;
+  /* width: 103px; */
+  width: 127px;
+  height: 126px;
+  transition: top 0.2s;
+  background-image: url(./lobo1.png);
+}
+
+button:hover {
+  /* we ahve to override element style
+     because we are setting rotation
+     dynamically for each card */
+  top: 0 !important;
+}
